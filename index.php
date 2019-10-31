@@ -18,6 +18,8 @@
  * See COPYING.txt for license details.
  */
 
+//ini_set('memory_limit','-1');
+
 try {
     require __DIR__ . '/app/bootstrap.php';
 } catch (\Exception $e) {
@@ -37,3 +39,5 @@ $bootstrap = \Magento\Framework\App\Bootstrap::create(BP, $_SERVER);
 /** @var \Magento\Framework\App\Http $app */
 $app = $bootstrap->createApplication(\Magento\Framework\App\Http::class);
 $bootstrap->run($app);
+
+
