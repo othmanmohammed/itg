@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.options.wrapper">
+            <block class="Magento\Catalog\Block\Product\View"
+                   name="consulting.awesome.image" as="consulting_awesome_image"
+                   template="itg_PopupContent::product/consulting/awesome-image.phtml" />
+        </referenceBlock>
+    </body>
+</page>
