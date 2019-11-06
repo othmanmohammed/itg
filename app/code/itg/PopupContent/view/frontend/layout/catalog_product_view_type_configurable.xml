@@ -7,5 +7,15 @@
                    name="consulting.awesome.image" as="consulting_awesome_image"
                    template="itg_PopupContent::product/consulting/awesome-image.phtml" />
         </referenceBlock>
+        
+        <referenceContainer name="content"> 
+            <block class="Magento\Cms\Block\Block" name="block_identifier"> 
+                <arguments> 
+                <argument name="block_id" xsi:type="string">block_identifier</argument> 
+                </arguments> 
+            </block> 
+        </referenceContainer>
     </body>
 </page>
+
+

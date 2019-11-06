@@ -9,13 +9,19 @@
         display: none;
     }
 </style>
+<!-- adding an image -->
+<img src='<?php echo $this->getViewFileUrl('itg_PopupContent::images/1.png'); ?>'
+     alt="image-1" width="300" height="250">
+
 <div class="size-selection">
     <a href="#"><?php echo __('Awesome picture'); ?></a>
 </div>
 <div class="consulting-content" id="consulting-content">
     <!-- The codes below helps display a static block in the template phtml file-->
-    <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('awesome-picture')->toHtml(); ?>
+    <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('picture-1-and-2')->toHtml(); ?>
     <!-- We will create the block id how-to-choose-the-right-size in the backend later -->
+    
+  <!--{{block class="Magento\\Cms\\Block\\Block" block_id="$temp_image"}}-->
 </div>
 <!-- You can learn How to use the Modal widget in the link https://devdocs.magento.com/guides/v2.2/javascript-dev-guide/widgets/widget_modal.html -->
 <!-- The javascript codes below helps to display the popup content -->
