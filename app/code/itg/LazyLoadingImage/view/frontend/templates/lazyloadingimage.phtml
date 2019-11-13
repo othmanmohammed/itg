@@ -1,0 +1,10 @@
+<?php /** @var $block \Magento\Framework\View\Element\Template */ ?>
+<script type="text/javascript">
+    require(['jquery', 'itg_LazyLoadingImage/js/lazy-loading-image'], function($) {
+        $('img.lazy-loading').lazyLoadingImage({
+            effect: 'fadeIn',
+            effectspeed: 1000,
+            imageloader: '<?= /* @escapeNotVerified */ $block->getViewFileUrl('itg_LazyLoadingImage::images/Loading.gif') ?>'
+        });
+    });
+</script
