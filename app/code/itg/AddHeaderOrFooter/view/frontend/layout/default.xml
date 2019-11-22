@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="head.additional">
+            <referenceBlock name="require.js">
+                <action method="setTemplate">
+                    <argument name="template" xsi:type="string">itg_AddHeaderOrFooter::success/head.phtml</argument>
+                </action>
+            </referenceBlock> 
+        </referenceBlock>     
+        
+<!--        <referenceBlock name="before.body.end">
+            <referenceBlock name="require.js">
+                <action method="setTemplate">
+                    <argument name="template" xsi:type="string">itg_AddHeaderOrFooter::success/head.phtml</argument>
+                </action>
+            </referenceBlock> 
+        </referenceBlock>             -->
+        
+<!--        <referenceBlock name="after.body.start">
+            <referenceBlock name="require.js">
+                <action method="setTemplate">
+                    <argument name="template" xsi:type="string">itg_AddHeaderOrFooter::success/head.phtml</argument>
+                </action>
+            </referenceBlock> 
+        </referenceBlock>  -->
+
+<!--        <referenceBlock name="footer">
+            <referenceBlock name="require.js">
+                <action method="setTemplate">
+                    <argument name="template" xsi:type="string">itg_AddHeaderOrFooter::success/head.phtml</argument>
+                </action>
+            </referenceBlock> 
+        </referenceBlock>             -->
+        
+<!--        <referenceBlock name="page.bottom.container">
+            <referenceBlock name="require.js">
+                <action method="setTemplate">
+                    <argument name="template" xsi:type="string">itg_AddHeaderOrFooter::success/head.phtml</argument>
+                </action>
+            </referenceBlock> 
+        </referenceBlock>  -->
+        
+<!--        <referenceContainer name="">
+           <referenceBlock name="require.js">
+                <action method="setTemplate">
+                    <argument name="template" xsi:type="string">itg_AddHeaderOrFooter::success/head.phtml</argument>
+                </action>
+            </referenceBlock> 
+        </referenceContainer> -->
+    </body>
+</page>
