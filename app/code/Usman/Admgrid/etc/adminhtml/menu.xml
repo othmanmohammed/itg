@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Usman_Admgrid::admgrid" title="Admin Grid" module="Usman_Admgrid" sortOrder="51"
+             resource="Usman_Admgrid::admgrid"/>
+        <add id="Usman_Admgrid::post" title="Manage Posts" module="Usman_Admgrid" sortOrder="10"
+             action="usman_admgrid/post/index" resource="Usman_Admgrid::post" parent="Usman_Admgrid::admgrid"/>
+        <add id="Usman_Admgrid::adm_configuration" title="Configuration" module="Usman_Admgrid"
+             sortOrder="99" parent="Usman_Admgrid::admgrid" action="adminhtml/system_config/edit/section/admgrid"
+             resource="Usman_Admgrid::admgrid_configuration"/>
+    </menu>
+</config>
